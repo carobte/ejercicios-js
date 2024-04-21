@@ -210,11 +210,16 @@ if (texto.endsWith(".")) {
     console.log(`23. El texto proporcionado no termina en .`)
 }
 
-// 24. Determina si una cadena de texto es un pangrama (contiene todas las letras del alfabeto). --------------------------------
+// 24. Determina si una cadena de texto es un pangrama (contiene todas las letras del alfabeto). 
 
-//if (texto.toUpperCase().match(/([a-z])(?!.*\1)/g).length === 26)
+// La expresión regular mira que tenga de la a-z, envía al match 1ra coincidencia de cada letra
+// Frase pangrama de ejemplo: "The quick brown fox jumps over the lazy dog"
 
-
+if (texto.toLowerCase().match(/([a-z])(?!.*\1)/g).length === 26){ 
+    console.log(`24. El texto ingresado es pangrama`)
+} else {
+    console.log(`24. El texto ingresado no es pangrama`)
+}
 
 // 25. Verifica si un día de la semana es laborable (de lunes a viernes).
 
@@ -349,7 +354,7 @@ if (numero * numero2 > 500) {
 
 // 40. Determina si la división de dos números es menor que 10.
 
-if (numero2 / numero < 10) {
+if (numero / numero2 < 10) {
     console.log(`40. La división de los números que ingresaste (${numero} / ${numero2}) es menor que 10`)
 } else {
     console.log(`40. La división de los números que ingresaste (${numero} / ${numero2}) no es menor que 10`)

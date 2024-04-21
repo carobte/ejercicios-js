@@ -186,8 +186,7 @@ if (texto === texto.toLowerCase()) {
     console.log(`21. El texto que ingresaste no está en minúsculas`)
 }
 
-/* 
-if (texto.match(/[a-z ]/g).length) { 
+/* if (texto.match(/[a-z ]/g).length === texto.length) { 
     console.log(`21. El texto que ingresaste está en minúsculas`)
 } else {
     console.log(`21. El texto que ingresaste no está en minúsculas`)

@@ -27,7 +27,6 @@ if (numero % 2 === 0) {
     console.log(`3. El número ${numero} no es par.`)
 }
 
-
 // 4. Comprueba si un número es impar.
 
 if (numero % 2 !== 0) {
@@ -151,7 +150,16 @@ if (contador === 1) {
     console.log(`17. El número ${numero} no es potencia de 2`)
 }
 
-// 18. Determina si un número es un palíndromo.  --------------------------------
+// 18. Determina si un número es un palíndromo.  
+
+let numeroString = String(numero)
+
+//  Pasamos a string, lo rompemos y queda en array, lo volteamos con reverse y volvemos a unir en un string con join.
+if (numeroString === numeroString.split("").reverse().join("")){
+    console.log(`18. El número es palíndromo`)
+} else {
+    console.log(`18. El número no es palíndromo`)
+}
 
 // 19. Verifica si una cadena de texto contiene la palabra "JavaScript".
 
@@ -203,6 +211,10 @@ if (texto.endsWith(".")) {
 }
 
 // 24. Determina si una cadena de texto es un pangrama (contiene todas las letras del alfabeto). --------------------------------
+
+//if (texto.toUpperCase().match(/([a-z])(?!.*\1)/g).length === 26)
+
+
 
 // 25. Verifica si un día de la semana es laborable (de lunes a viernes).
 
